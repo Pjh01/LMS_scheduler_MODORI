@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/login_appname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/noto_sans_bold"
+        android:lineSpacingExtra="18sp"
+        android:text="모두리"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_subtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/noto_sans"
+        android:lineSpacingExtra="7sp"
+        android:text="모두의 학교생활 매니저"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_appname_tv" />
+
+
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:src="@drawable/logo_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_subtitle_tv"
+        android:layout_marginTop="35dp"/>
+
+
+
+    <TextView
+        android:id="@+id/login_emailstart_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noto_sans"
+        android:textStyle="normal"
+        android:textSize="17sp"
+        android:textColor="#a2a2a2"
+        android:letterSpacing="-0.05"
+        android:lineSpacingExtra="65sp"
+        android:gravity="center_horizontal"
+        android:text="이메일로 계속하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_logo"
+        android:layout_marginTop="43dp"/>
+
+
+    <TextView
+        android:id="@+id/signup_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noto_sans"
+        android:textStyle="normal"
+        android:textSize="17sp"
+        android:textColor="#a2a2a2"
+        android:letterSpacing="-0.05"
+        android:lineSpacingExtra="65sp"
+        android:gravity="center_horizontal"
+        android:text="회원가입"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_emailstart_tv"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/login_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/login_notify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="49dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
